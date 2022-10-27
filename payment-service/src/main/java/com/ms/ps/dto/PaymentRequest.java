@@ -1,0 +1,16 @@
+package com.ms.ps.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.UUID;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PaymentRequest {
+    private UUID id;
+    private UUID orderId;
+    private double amount;
+}
